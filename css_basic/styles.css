@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(126, 236, 200);
+    background-color:rgb(255, 245, 233);
 }
 
 main {
@@ -18,4 +18,6 @@ article {
 aside {
     flex: 1;
     overflow-y: auto;
+    background-color: darkcyan;
+    border: 5px, solid, rgb(240, 217, 10);
 }
