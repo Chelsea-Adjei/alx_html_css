@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -148,7 +147,7 @@ body {
     text-align: center;
 }
 
-/*.secondPage {
+.secondPage {
     background-color: #fff;
     color: #000;
     padding: 4rem;
@@ -177,13 +176,14 @@ body {
     font-weight: 400;
     line-height: 2.6rem;
     text-align: center;
+
 }
 
 .secondPage-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    gap: 5rem;
 }
 
 .secondPage-icons .icon1 {
@@ -283,7 +283,65 @@ body {
 .thirdPage-icons .iconz .inside {
     padding: 4rem;
     position: absolute;
-}*/
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContainer .contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contact .contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem;
+}
+
+.contact-text h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #071629;
+}
+
+.contactForm input {
+    width: 100%;
+    border: none;
+    font-size: 1.6rem;
+    border-bottom: 0.1rem solid #000;
+    padding: 0.4rem;
+}
+
+.contactForm input:focus {
+    border-color: #FF6565;
+    outline: none;
+}
+
+button {
+    width: 16.2rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    align-items: center;
+    background-color:#FF6565;
+    color: #fff;
+    font-weight: 700;
+}
+
+button:hover, button:active {
+    opacity: 0.8;
+}
 
 @media (max-width: 480px) {
     body {
@@ -330,5 +388,47 @@ body {
     .secondText .text3 {
         font-size: 2rem;
         line-height: 2.6rem;
+    }
+
+    .secondPage-icons {
+        flex-direction: column;
+        padding: 5rem 0;
+        gap: 6rem;
+    }
+
+    .secondPage .secondPage-texts {
+        padding: 5rem;
+        gap: 4rem;
+    }
+
+    .secondPage-texts .text-2 {
+        width: 37rem;
+        height: 33rem;
+        font-size: 2.2rem;
+        padding:0 2.5rem;
+    }
+
+    .thirdPage-icons {
+        flex-direction: column;
+        padding: 7rem 0;
+    }
+
+    .thirdPage-text h1 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        width: 27rem;
+        height: 8rem;
+    }
+
+    .thirdPage-text p {
+        width: 31rem;
+        height: 21rem;
+        font-size: 2.1rem;
+    }
+
+    .contact-text h1 {
+        width: 16rem;
+        height: 4rem;
+        font-size: 3.3rem;
     }
 }
