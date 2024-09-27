@@ -343,6 +343,52 @@ button:hover, button:active {
     opacity: 0.8;
 }
 
+.footer {
+    background-color: #071629;
+}
+
+.footerContainer {
+    width: 100%;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5rem 6rem;
+}
+
+.footerLinks .img {
+    width: 16rem;
+    height: 3.2rem;
+}
+
+.footerLinks .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socials .one {
+    width: 3rem;
+    height: 3rem;
+    gap: 4rem;
+}
+
+.copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    font-family: Source Sans Pro;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.508rem;
+    text-align: left;
+
+}
+
 @media (max-width: 480px) {
     body {
         height: auto;
@@ -426,9 +472,20 @@ button:hover, button:active {
         font-size: 2.1rem;
     }
 
+    .contactContainer {
+        background-color: #fff;
+        color: #000;
+    }
+
     .contact-text h1 {
         width: 16rem;
         height: 4rem;
         font-size: 3.3rem;
+    }
+
+    .footerContainer .footerLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
     }
 }
