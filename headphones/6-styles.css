@@ -18,15 +18,6 @@ body {
     background-position: center;
 }
 
-/*.thirdPage {
-    width: 100%;
-    height: 100vh;
-    background: url(./images/headphones_hero_2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}*/
-
 .thirdPage-text {
     display: flex;
     flex-direction: column;
@@ -52,7 +43,11 @@ body {
 }
 
 .thirdPage-icons {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 .pentagon {
@@ -62,4 +57,20 @@ body {
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pentagon .inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    gap: 1.2rem;
+    padding: 1rem;
+}
+
+.inside p {
+    font-size: 1.6rem;
 }
